@@ -1,6 +1,8 @@
 import { ImageResponse } from '@vercel/og'
 import eplData from '../eplData.json'
 import laligaData from '../laligaData.json'
+import bundesligaData from '../bundesligaData.json'
+import serieaData from '../serieaData.json'
 import { NEXT_PUBLIC_URL } from '../../config'
 
 export const runtime = "edge"
@@ -32,8 +34,6 @@ const formatStats = (stats: any): any => {
     delete stats[1];
     delete stats[6];
     if (stats[12].categoryName === "Red Cards") {
-      //delete stats[14];
-      //delete stats[15];
       delete stats[16];
       delete stats[17];
     } else {
@@ -70,15 +70,14 @@ export async function GET(request: Request) {
     const stats = hasStats
       ? searchParams.get('stats')?.slice(0, 100)
       : false;
-
-    console.log(stats);
       
-    const leagueData = league === 'epl' ? eplData : laligaData; 
+    let leagueData;
+    if (league === 'epl') leagueData = eplData;
+    if (league === 'laliga') leagueData = laligaData;
+    if (league === 'seriea') leagueData = serieaData;
+    if (league === 'bundesliga') leagueData = bundesligaData;
     const game = getGameData({ leagueData, gameIdx });
-
-
     console.log(game);
-
         
     return new ImageResponse(
       (

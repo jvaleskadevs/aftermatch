@@ -19,6 +19,16 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
           label: 'La Liga',
           target: `${NEXT_PUBLIC_URL}/api/laliga`,
           postUrl: `${NEXT_PUBLIC_URL}/api/laliga`
+        },
+        {
+          label: 'Serie A',
+          target: `${NEXT_PUBLIC_URL}/api/seriea`,
+          postUrl: `${NEXT_PUBLIC_URL}/api/seriea`
+        },
+        {
+          label: 'Bundesliga',
+          target: `${NEXT_PUBLIC_URL}/api/bundesliga`,
+          postUrl: `${NEXT_PUBLIC_URL}/api/bundesliga`
         }
       ],
       image: {

@@ -1,0 +1,944 @@
+{
+  "fB59P6ff": {
+    "date": "27.10.2024 20:45",
+    "home": {
+      "name": "Fiorentina",
+      "image": "https://static.flashscore.com/res/image/data/nPTphRh5-6XKdgOM6.png"
+    },
+    "away": {
+      "name": "AS Roma",
+      "image": "https://static.flashscore.com/res/image/data/QPgsexZA-GtNb9h2q.png"
+    },
+    "result": {
+      "home": "5",
+      "away": "1",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "3.80",
+        "awayValue": "0.65"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "38%",
+        "awayValue": "62%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "21",
+        "awayValue": "14"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "10",
+        "awayValue": "5"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "8",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "3",
+        "awayValue": "8"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "11",
+        "awayValue": "13"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "6",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "2",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "5",
+        "awayValue": "10"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "4",
+        "awayValue": "5"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "13",
+        "awayValue": "11"
+      },
+      {
+        "categoryName": "Red Cards",
+        "homeValue": "0",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "2",
+        "awayValue": "5"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "343",
+        "awayValue": "547"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "304",
+        "awayValue": "503"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "6",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "4",
+        "awayValue": "6"
+      }
+    ]
+  },
+  "jwaINpP6": {
+    "date": "27.10.2024 18:00",
+    "home": {
+      "name": "Inter",
+      "image": "https://static.flashscore.com/res/image/data/lxz64qDa-jDrBQiMS.png"
+    },
+    "away": {
+      "name": "Juventus",
+      "image": "https://static.flashscore.com/res/image/data/CbDOFGyS-EXzXDYgS.png"
+    },
+    "result": {
+      "home": "4",
+      "away": "4",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "3.13",
+        "awayValue": "2.17"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "47%",
+        "awayValue": "53%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "18",
+        "awayValue": "10"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "9",
+        "awayValue": "5"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "4",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "5",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "16",
+        "awayValue": "11"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "13",
+        "awayValue": "5"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "0",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "8",
+        "awayValue": "12"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "1",
+        "awayValue": "5"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "11",
+        "awayValue": "16"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "2",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "383",
+        "awayValue": "445"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "327",
+        "awayValue": "392"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "5",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "5",
+        "awayValue": "5"
+      }
+    ]
+  },
+  "OjcQLOgJ": {
+    "date": "27.10.2024 15:00",
+    "home": {
+      "name": "Lazio",
+      "image": "https://static.flashscore.com/res/image/data/zXqymff5-fL3dmxxd.png"
+    },
+    "away": {
+      "name": "Genoa",
+      "image": "https://static.flashscore.com/res/image/data/WznpqVfM-hCD6m1R3.png"
+    },
+    "result": {
+      "home": "3",
+      "away": "0",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "1.90",
+        "awayValue": "0.27"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "61%",
+        "awayValue": "39%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "18",
+        "awayValue": "6"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "4",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "10",
+        "awayValue": "4"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "4",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "6",
+        "awayValue": "12"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "7",
+        "awayValue": "4"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "1",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "15",
+        "awayValue": "19"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "2",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "12",
+        "awayValue": "6"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "3",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "550",
+        "awayValue": "352"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "486",
+        "awayValue": "276"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "9",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "7",
+        "awayValue": "4"
+      }
+    ]
+  },
+  "xY3xTu1n": {
+    "date": "27.10.2024 15:00",
+    "home": {
+      "name": "Monza",
+      "image": "https://static.flashscore.com/res/image/data/SUTtpvDa-nedmW6cD.png"
+    },
+    "away": {
+      "name": "Venezia",
+      "image": "https://static.flashscore.com/res/image/data/WxiS2Wkl-pC7LdTYL.png"
+    },
+    "result": {
+      "home": "2",
+      "away": "2",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "1.20",
+        "awayValue": "0.58"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "46%",
+        "awayValue": "54%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "13",
+        "awayValue": "6"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "2",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "8",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "3",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "16",
+        "awayValue": "17"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "4",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "0",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "16",
+        "awayValue": "24"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "0",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "17",
+        "awayValue": "16"
+      },
+      {
+        "categoryName": "Red Cards",
+        "homeValue": "1",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "4",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "347",
+        "awayValue": "416"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "273",
+        "awayValue": "338"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "9",
+        "awayValue": "6"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "11",
+        "awayValue": "4"
+      }
+    ]
+  },
+  "jeAhPc0B": {
+    "date": "27.10.2024 12:30",
+    "home": {
+      "name": "Parma",
+      "image": "https://static.flashscore.com/res/image/data/YcrE7ae5-fydXzLY6.png"
+    },
+    "away": {
+      "name": "Empoli",
+      "image": "https://static.flashscore.com/res/image/data/xArvJNCa-KbH8aCLf.png"
+    },
+    "result": {
+      "home": "1",
+      "away": "1",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "1.75",
+        "awayValue": "0.13"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "60%",
+        "awayValue": "40%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "17",
+        "awayValue": "6"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "4",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "8",
+        "awayValue": "4"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "5",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "17",
+        "awayValue": "12"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "9",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "1",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "23",
+        "awayValue": "14"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "1",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "12",
+        "awayValue": "17"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "4",
+        "awayValue": "5"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "527",
+        "awayValue": "350"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "456",
+        "awayValue": "279"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "3",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "7",
+        "awayValue": "8"
+      }
+    ]
+  },
+  "OMVUWl2K": {
+    "date": "26.10.2024 20:45",
+    "home": {
+      "name": "Atalanta",
+      "image": "https://static.flashscore.com/res/image/data/xASUZ6il-rg6usZns.png"
+    },
+    "away": {
+      "name": "Verona",
+      "image": "https://static.flashscore.com/res/image/data/vgsKSajl-jLhuIlpK.png"
+    },
+    "result": {
+      "home": "6",
+      "away": "1",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "2.65",
+        "awayValue": "0.28"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "69%",
+        "awayValue": "31%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "19",
+        "awayValue": "4"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "10",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "6",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "3",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "15",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "4",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "1",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "11",
+        "awayValue": "12"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "1",
+        "awayValue": "4"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "3",
+        "awayValue": "15"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "0",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "785",
+        "awayValue": "349"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "714",
+        "awayValue": "270"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "3",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "6",
+        "awayValue": "10"
+      }
+    ]
+  },
+  "UuMqRJVb": {
+    "date": "26.10.2024 15:00",
+    "home": {
+      "name": "Napoli",
+      "image": "https://static.flashscore.com/res/image/data/lhPsgJWg-Qcs4tGVj.png"
+    },
+    "away": {
+      "name": "Lecce",
+      "image": "https://static.flashscore.com/res/image/data/AaI0V5Fa-McvX4bye.png"
+    },
+    "result": {
+      "home": "1",
+      "away": "0",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "2.40",
+        "awayValue": "0.61"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "65%",
+        "awayValue": "35%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "24",
+        "awayValue": "11"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "8",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "7",
+        "awayValue": "4"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "9",
+        "awayValue": "5"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "7",
+        "awayValue": "13"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "16",
+        "awayValue": "5"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "1",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "18",
+        "awayValue": "17"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "2",
+        "awayValue": "7"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "13",
+        "awayValue": "7"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "3",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "493",
+        "awayValue": "272"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "423",
+        "awayValue": "198"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "8",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "7",
+        "awayValue": "9"
+      }
+    ]
+  },
+  "bLD0NyVN": {
+    "date": "25.10.2024 20:45",
+    "home": {
+      "name": "Torino",
+      "image": "https://static.flashscore.com/res/image/data/OQWGjGcM-0lwy4Ij1.png"
+    },
+    "away": {
+      "name": "Como",
+      "image": "https://static.flashscore.com/res/image/data/Cf5pQNyS-hpmw8K1h.png"
+    },
+    "result": {
+      "home": "1",
+      "away": "0",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "1.38",
+        "awayValue": "1.64"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "31%",
+        "awayValue": "69%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "8",
+        "awayValue": "20"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "2",
+        "awayValue": "6"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "3",
+        "awayValue": "6"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "3",
+        "awayValue": "8"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "12",
+        "awayValue": "13"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "1",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "3",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "17",
+        "awayValue": "22"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "6",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "13",
+        "awayValue": "12"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "3",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "280",
+        "awayValue": "628"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "211",
+        "awayValue": "552"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "2",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "10",
+        "awayValue": "5"
+      }
+    ]
+  },
+  "I5fXHFho": {
+    "date": "25.10.2024 18:30",
+    "home": {
+      "name": "Udinese",
+      "image": "https://static.flashscore.com/res/image/data/AZBQMaYA-SYw7EcY6.png"
+    },
+    "away": {
+      "name": "Cagliari",
+      "image": "https://static.flashscore.com/res/image/data/IBlLf9f5-McvX4bye.png"
+    },
+    "result": {
+      "home": "2",
+      "away": "0",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "1.01",
+        "awayValue": "0.45"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "64%",
+        "awayValue": "36%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "13",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "4",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "7",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "2",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "9",
+        "awayValue": "13"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "2",
+        "awayValue": "4"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "2",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "19",
+        "awayValue": "14"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "0",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "13",
+        "awayValue": "9"
+      },
+      {
+        "categoryName": "Red Cards",
+        "homeValue": "0",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "2",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "532",
+        "awayValue": "293"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "484",
+        "awayValue": "234"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "5",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "8",
+        "awayValue": "3"
+      }
+    ]
+  }
+}
