@@ -78,12 +78,7 @@ export async function GET(request: Request) {
           { stats !== 'true'
               ? <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
                 >{`${game.home.name} ${game.result.home}-${game.result.away} ${game.away.name}`}</div>
-              : <div style={{ display: 'flex', flexDirection: 'column', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
-                >{game.statistics.map((s: any, idx: number) => (
-                  <div style={{ display: 'flex', fontSize: 12 }} key={idx}>
-                    <h3>{s.categoryName}</h3>:<h5>{s.homeValue}</h5>-<h5>{s.awayValue}</h5>
-                  </div>
-                ))}</div>
+              : <div>LOL</div>
           }
         </div>
       ),
