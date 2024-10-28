@@ -54,11 +54,13 @@ export async function GET(request: Request) {
     const stats = hasStats
       ? searchParams.get('stats')?.slice(0, 100)
       : false;
+
+    console.log(stats);
       
     const leagueData = league === 'epl' ? eplData : laligaData; 
     const game = getGameData({ leagueData, gameIdx });
     console.log(game);
-    console.log(stats);
+
         
     return new ImageResponse(
       (

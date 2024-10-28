@@ -20,6 +20,8 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   } catch (e) {
     console.error(e);
   }
+  
+  console.log(state);
 
   return new NextResponse(
     getFrameHtmlResponse({
