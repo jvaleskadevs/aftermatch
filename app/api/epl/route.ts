@@ -17,7 +17,8 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     game: 0
   };
   try {
-    state = JSON.parse(decodeURIComponent(message.state?.serialized));
+    state = message.button === 3 ? state : JSON.parse(decodeURIComponent(message.state?.serialized));
+    if (message.button === 1) state.game++;
   } catch (e) {
     console.error(e);
   }
@@ -29,6 +30,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
           label: 'Next Game',
         },
         {
+          action: 'link',
           label: 'Share',
           target: `https://warpcast.com/~/compose?text=hey%20check%20the%20result%20of%20this%20game&embeds[]=${NEXT_PUBLIC_URL}/api/og?league=epl&game=${state.game}`
         },
@@ -41,7 +43,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       },
       postUrl: `${NEXT_PUBLIC_URL}/api/epl`,
       state: {
-        game: message.button === 1 ? state.game + 1 : state.game,
+        game: state.game,
         time: new Date().toISOString(),
       },
     }),
