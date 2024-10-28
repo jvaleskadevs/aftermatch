@@ -58,6 +58,7 @@ export async function GET(request: Request) {
     const leagueData = league === 'epl' ? eplData : laligaData; 
     const game = getGameData({ leagueData, gameIdx });
     console.log(game);
+    console.log(stats);
         
     return new ImageResponse(
       (
@@ -75,14 +76,10 @@ export async function GET(request: Request) {
           { stats !== 'true'
               ? <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
                 >{`${game.home.name} ${game.result.home}-${game.result.away} ${game.away.name}`}</div>
-              : <div style={{ display: 'flex', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
+              : <div style={{ display: 'flex', flexDirection: 'column', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
                 >{game.statistics.map((s: any, idx: number) => (
-                  <div style={{ fontSize: 12 }} key={idx}>
-                    <h3>{s.categoryName}</h3>
-                    <h5>{game.home.name}</h5>
-                    <h5>{s.homeValue}</h5>
-                    <h5>{game.away.name}</h5>
-                    <h5>{s.awayValue}</h5>
+                  <div style={{ display: 'flex', fontSize: 12 }} key={idx}>
+                    <h3>{s.categoryName}</h3>:<h5>{s.homeValue}</h5>-<h5>{s.awayValue}</h5>
                   </div>
                 ))}</div>
           }
