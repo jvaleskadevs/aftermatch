@@ -20,6 +20,10 @@ const getGameData = ({ data, gameIdx }: GetGameData): any => {
 
 export async function GET(request: Request) {
   try {
+    const fontData = await fetch(
+      new URL('/Nimbus.otf', NEXT_PUBLIC_URL),
+    ).then((res) => res.arrayBuffer());
+
     const { searchParams } = new URL(request.url);
 
     const hasLeague = searchParams.has('league');
@@ -47,7 +51,7 @@ export async function GET(request: Request) {
             display: 'flex',
             fontSize: 64,
             background: 'white',
-            color: 'white',
+            color: '#edd3fb',
             width: '100%',
             height: '100%',
           }}
@@ -56,7 +60,15 @@ export async function GET(request: Request) {
           <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
           >{`${game.home.name} ${game.result.home}-${game.result.away} ${game.away.name}`}</div>
         </div>
-      )
+      ),
+      {
+        fonts: [{
+            data: fontData,
+            name: 'Nimbus',
+            style: 'normal',
+            weight: 400
+        }]        
+      }
     )
   } catch (e: any) {
     console.log(`${e.message}`);
