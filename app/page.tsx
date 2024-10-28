@@ -16,7 +16,7 @@ const frameMetadata = getFrameMetadata({
     }
   ],
   image: {
-    src: `${NEXT_PUBLIC_URL}/intro.png`,
+    src: `${NEXT_PUBLIC_URL}/the_aftermatch.png`,
     aspectRatio: '1.91:1',
   },
   postUrl: `${NEXT_PUBLIC_URL}/api/laliga`,
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'aftermatch',
     description: 'The aftermatch is a farcaster frame displaying the results of the most important football leagues',
-    images: [`${NEXT_PUBLIC_URL}/intro.png`],
+    images: [`${NEXT_PUBLIC_URL}/the_aftermatch.png`],
   },
   other: {
     ...frameMetadata,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>aftermatch</h1>
+      <h1>the aftermatch</h1>
       <h3>the aftermatch is a farcaster frame displaying the results of the most important football leagues</h3>
     </>
   );
