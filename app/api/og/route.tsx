@@ -51,6 +51,9 @@ export async function GET(request: Request) {
       : '0') || '0';      
       
     const hasStats = searchParams.has('stats');
+    const stats = hasStats
+      ? searchParams.get('stats')?.slice(0, 100)
+      : false;
       
     const leagueData = league === 'epl' ? eplData : laligaData; 
     const game = getGameData({ leagueData, gameIdx });
@@ -61,7 +64,7 @@ export async function GET(request: Request) {
         <div
           style={{
             display: 'flex',
-            fontSize: 58,
+            fontSize: 42,
             background: 'white',
             color: '#edd3fb',
             width: '100%',
@@ -69,7 +72,7 @@ export async function GET(request: Request) {
           }}
         >          
           <img width={'100%'} height={'100%'} src={`${NEXT_PUBLIC_URL}/bg.png`} />
-          { hasStats 
+          { stats 
               ? <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
                 >{`${game.home.name} ${game.result.home}-${game.result.away} ${game.away.name}`}</div>
               : <div style={{ display: 'flex', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
