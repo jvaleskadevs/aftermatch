@@ -3,16 +3,19 @@ import eplData from '../eplData.json'
 import laligaData from '../laligaData.json'
 import { NEXT_PUBLIC_URL } from '../../config'
 
-export const config = {
-  runtime: 'experimental-edge',
+export const runtime = "edge"
+
+type GetGameData = {
+  data: any,
+  gameIdx: string
 }
 
-const getGameData = (data, gameIdx) => {
+const getGameData = ({ data, gameIdx }: GetGameData): any => {
   let games = [];
   for (const gameId of Object.keys(data)) {
     games.push(data[gameId]);
   }
-  return games[gameIdx];
+  return games[parseInt(gameIdx) || 0];
 }
 
 export async function GET(request: Request) {
@@ -30,11 +33,11 @@ export async function GET(request: Request) {
       : '9';
       
     const hasGame = searchParams.has('game');
-    const gameIdx = hasGame
+    const gameIdx = (hasGame
       ? searchParams.get('game')?.slice(0, 100)
-      : '0';      
+      : '0') || '0';      
       
-    const game = getGameData(league === 'epl' ? eplData : laligaData, gameIdx);
+    const game = getGameData({ data: league === 'epl' ? eplData : laligaData, gameIdx });
     console.log(game);
         
     return new ImageResponse(

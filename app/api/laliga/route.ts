@@ -34,7 +34,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       },
       postUrl: `${NEXT_PUBLIC_URL}/api/laliga`,
       state: {
-        game: message.buttonIndex === 1 ? state.game + 1 : state.game,
+        game: message.button === 1 ? state.game + 1 : state.game,
         time: new Date().toISOString(),
       },
     }),
