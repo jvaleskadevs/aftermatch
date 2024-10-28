@@ -19,7 +19,7 @@ const frameMetadata = getFrameMetadata({
     src: `${NEXT_PUBLIC_URL}/the_aftermatch.png`,
     aspectRatio: '1.91:1',
   },
-  postUrl: `${NEXT_PUBLIC_URL}/api/intro`,
+  postUrl: `${NEXT_PUBLIC_URL}/api/intro`
 });
 
 export const metadata: Metadata = {

@@ -17,7 +17,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   try {
     state = JSON.parse(decodeURIComponent(message.state?.serialized));
     if (message.button === 1) state.game++;
-    if (message.button === 2) state.stats = true;
+    if (message.button === 2) state.stats = !state.stats;
   } catch (e) {
     console.error(e);
   }
