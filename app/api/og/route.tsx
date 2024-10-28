@@ -6,16 +6,25 @@ import { NEXT_PUBLIC_URL } from '../../config'
 export const runtime = "edge"
 
 type GetGameData = {
-  data: any,
+  leagueData: any,
   gameIdx: string
 }
 
-const getGameData = ({ data, gameIdx }: GetGameData): any => {
+const getGameData = ({ leagueData, gameIdx }: GetGameData): any => {
   let games = [];
-  for (const gameId of Object.keys(data)) {
-    games.push(data[gameId]);
+  for (const gameId of Object.keys(leagueData)) {
+    games.push(leagueData[gameId]);
   }
   return games[parseInt(gameIdx) || 0];
+}
+
+type GetGameStats = {
+  game: any,
+  stats: string
+}
+
+const getGameStats = ({ game, stats }: GetGameStats): any => {
+  return game?.statistics?.filter((g: any) => g?.categoryName?.toLowerCase() === stats)?.[0] || undefined;
 }
 
 export async function GET(request: Request) {
@@ -41,7 +50,10 @@ export async function GET(request: Request) {
       ? searchParams.get('game')?.slice(0, 100)
       : '0') || '0';      
       
-    const game = getGameData({ data: league === 'epl' ? eplData : laligaData, gameIdx });
+    const hasStats = searchParams.has('stats');
+      
+    const leagueData = league === 'epl' ? eplData : laligaData; 
+    const game = getGameData({ leagueData, gameIdx });
     console.log(game);
         
     return new ImageResponse(
@@ -57,8 +69,20 @@ export async function GET(request: Request) {
           }}
         >          
           <img width={'100%'} height={'100%'} src={`${NEXT_PUBLIC_URL}/bg.png`} />
-          <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
-          >{`${game.home.name} ${game.result.home}-${game.result.away} ${game.away.name}`}</div>
+          { hasStats 
+              ? <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
+                >{`${game.home.name} ${game.result.home}-${game.result.away} ${game.away.name}`}</div>
+              : <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
+                >{game.statistics.map((s: any, idx: number) => (
+                  <div key={idx}>
+                    <h3>{s.categoryName}</h3>
+                    <h5>{game.home.name}</h5>
+                    <h5>{s.homeValue}</h5>
+                    <h5>{game.away.name}</h5>
+                    <h5>{s.awayValue}</h5>
+                  </div>
+                ))}</div>
+          }
         </div>
       ),
       {

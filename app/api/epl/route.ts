@@ -14,11 +14,13 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
   //const text = message.input || '';
   let state = {
-    game: 0
+    game: 0,
+    stats: false
   };
   try {
     state = JSON.parse(decodeURIComponent(message.state?.serialized));
     if (message.button === 1) state.game++;
+    if (message.button === 2) state.stats = true;
   } catch (e) {
     console.error(e);
   }
@@ -27,7 +29,11 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     getFrameHtmlResponse({
       buttons: [
         {
-          label: 'Next Game',
+          label: 'Next',
+        },
+        {
+          label: 'Stats',
+          target: `${NEXT_PUBLIC_URL}/api/stats`,
         },
         {
           action: 'link',
@@ -40,12 +46,11 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         }
       ],
       image: {
-        src: `${NEXT_PUBLIC_URL}/api/og?league=epl&week=${week}&game=${state.game}`,
+        src: `${NEXT_PUBLIC_URL}/api/og?league=epl&week=${week}&game=${state.game}${state.stats ? '&stats=true' : ''}`,
       },
       postUrl: `${NEXT_PUBLIC_URL}/api/epl`,
       state: {
-        game: state.game,
-        time: new Date().toISOString(),
+        game: state.game
       },
     }),
   );

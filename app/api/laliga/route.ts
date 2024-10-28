@@ -13,11 +13,13 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   }
 
   let state = {
-    game: 0
+    game: 0,
+    stats: false
   };
   try {
     state = JSON.parse(decodeURIComponent(message.state?.serialized));
     if (message.button === 1) state.game++;
+    if (message.button === 2) state.stats = true;
   } catch (e) {
     console.error(e);
   }
@@ -39,12 +41,11 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         }
       ],
       image: {
-        src: `${NEXT_PUBLIC_URL}/api/og?league=laliga&week=${week}&game=${state.game}`,
+        src: `${NEXT_PUBLIC_URL}/api/og?league=laliga&week=${week}&game=${state.game}${state.stats ? '&stats=true' : ''}`,
       },
       postUrl: `${NEXT_PUBLIC_URL}/api/laliga`,
       state: {
-        game: state.game,
-        time: new Date().toISOString(),
+        game: state.game
       },
     }),
   );
