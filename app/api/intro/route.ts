@@ -5,6 +5,7 @@ import { NEXT_PUBLIC_URL } from '../../config';
 async function getResponse(req: NextRequest): Promise<NextResponse> {
   const body: FrameRequest = await req.json();
   const { isValid, message } = await getFrameMessage(body, { neynarApiKey: process.env.NEYNAR_API_KEY || 'NEYNAR_ONCHAIN_KIT' });
+  if (!isValid) return new NextResponse('Message not valid', { status: 500 });
 
   return new NextResponse(
     getFrameHtmlResponse({

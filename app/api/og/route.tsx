@@ -30,7 +30,7 @@ const getGameStats = ({ game, stats }: GetGameStats): any => {
 export async function GET(request: Request) {
   try {
     const fontData = await fetch(
-      new URL('/Nimbus.otf', NEXT_PUBLIC_URL),
+      new URL('/nimbus.otf', NEXT_PUBLIC_URL),
     ).then((res) => res.arrayBuffer());
 
     const { searchParams } = new URL(request.url);
@@ -86,13 +86,16 @@ export async function GET(request: Request) {
         </div>
       ),
       {
+        width: 802,
+        height: 420,
         fonts: [{
             data: fontData,
             name: 'Nimbus',
             style: 'normal',
             weight: 400
-        }]        
-      }
+        }],
+        emoji: 'twemoji'
+      }      
     )
   } catch (e: any) {
     console.log(`${e.message}`);

@@ -5,12 +5,9 @@ import { NEXT_PUBLIC_URL } from '../../config';
 async function getResponse(req: NextRequest): Promise<NextResponse> {
   const body: FrameRequest = await req.json();
   const { isValid, message } = await getFrameMessage(body, { neynarApiKey: process.env.NEYNAR_API_KEY || 'NEYNAR_ONCHAIN_KIT' });
+  if (!isValid) return new NextResponse('Message not valid', { status: 500 });
 
   const week = 9;
-
-  if (!isValid) {
-    return new NextResponse('Message not valid', { status: 500 });
-  }
 
   let state = {
     game: 0,
@@ -28,7 +25,10 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     getFrameHtmlResponse({
       buttons: [
         {
-          label: 'Next Game'
+          label: 'Next'
+        },
+        {
+          label: state.stats ? 'Game' : 'Stats'
         },
         {
           action: 'link',
