@@ -27,6 +27,22 @@ const getGameStats = ({ game, stats }: GetGameStats): any => {
   return game?.statistics?.filter((g: any) => g?.categoryName?.toLowerCase() === stats)?.[0] || undefined;
 }
 
+const formatStats = (stats: any): any => {
+    delete stats[0];
+    delete stats[1];
+    delete stats[6];
+    if (stats[12].categoryName === "Red Cards") {
+      //delete stats[14];
+      //delete stats[15];
+      delete stats[16];
+      delete stats[17];
+    } else {
+      delete stats[15];
+      delete stats[16];       
+    } 
+    return stats;
+}
+
 export async function GET(request: Request) {
   try {
     const fontData = await fetch(
@@ -59,6 +75,8 @@ export async function GET(request: Request) {
       
     const leagueData = league === 'epl' ? eplData : laligaData; 
     const game = getGameData({ leagueData, gameIdx });
+
+
     console.log(game);
 
         
@@ -75,12 +93,22 @@ export async function GET(request: Request) {
           }}
         >          
           <img width={'100%'} height={'100%'} src={`${NEXT_PUBLIC_URL}/bg.png`} />
-          { stats !== 'true'
-              ? <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
-                >{`${game.home.name} ${game.result.home}-${game.result.away} ${game.away.name}`}</div>
-              : <div style={{ display: 'flex', flexDirection: 'column', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', fontSize: 12 }}
-                >{game.statistics.slice(0, 3).map((s: any) => <div>{`${s.categoryName}: ${s.homeValue} - ${s.awayValue}`}</div>)}</div>
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+            <h4>{`${game.home.name} ${game.result.home}-${game.result.away} ${game.away.name}`}</h4>
+          { stats === 'true' && 
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', fontSize: 18, margin: '0 auto' }}>
+              {formatStats(game.statistics).map((s: any) => (
+                <div style={{ display: 'flex', transform: 'translateY(-200%)', marginBottom: '6px' }} key={s.categoryName}>
+                  {`${s.categoryName.toLowerCase()}`}
+                  <span style={{ color: '#969696', marginLeft: '16px' }}>
+                    {`${s.homeValue} - ${s.awayValue}`}
+                  </span>
+                </div>
+              ))}
+            </div>
           }
+          </div>
+          
         </div>
       ),
       {
