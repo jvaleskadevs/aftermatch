@@ -46,9 +46,10 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       },
       postUrl: `${NEXT_PUBLIC_URL}/api/epl`,
       state: {
-        game: state.game
-      },
-    }),
+        game: state.game,
+        stats: state.stats
+      }
+    })
   );
 }
 

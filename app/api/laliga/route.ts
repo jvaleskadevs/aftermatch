@@ -45,9 +45,10 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       },
       postUrl: `${NEXT_PUBLIC_URL}/api/laliga`,
       state: {
-        game: state.game
-      },
-    }),
+        game: state.game,
+        stats: state.stats
+      }
+    })
   );
 }
 
