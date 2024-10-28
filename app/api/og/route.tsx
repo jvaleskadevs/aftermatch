@@ -78,7 +78,8 @@ export async function GET(request: Request) {
           { stats !== 'true'
               ? <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
                 >{`${game.home.name} ${game.result.home}-${game.result.away} ${game.away.name}`}</div>
-              : <div>LOL</div>
+              : <div style={{ display: 'flex', flexDirection: 'column', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', fontSize: 12 }}
+                >{game.statistics.slice(0, 3).map((s: any) => <div>{`${s.categoryName}: ${s.homeValue} - ${s.awayValue}`}</div>)}</div>
           }
         </div>
       ),
