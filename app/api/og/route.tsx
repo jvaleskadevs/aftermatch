@@ -72,12 +72,12 @@ export async function GET(request: Request) {
           }}
         >          
           <img width={'100%'} height={'100%'} src={`${NEXT_PUBLIC_URL}/bg.png`} />
-          { stats 
+          { stats !== 'true'
               ? <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
                 >{`${game.home.name} ${game.result.home}-${game.result.away} ${game.away.name}`}</div>
               : <div style={{ display: 'flex', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
                 >{game.statistics.map((s: any, idx: number) => (
-                  <div key={idx}>
+                  <div style={{ fontSize: 12 }} key={idx}>
                     <h3>{s.categoryName}</h3>
                     <h5>{game.home.name}</h5>
                     <h5>{s.homeValue}</h5>
