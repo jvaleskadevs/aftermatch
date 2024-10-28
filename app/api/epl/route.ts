@@ -27,6 +27,13 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       buttons: [
         {
           label: 'Next Game',
+        },
+        {
+          label: 'Share',
+          target: `https://warpcast.com/~/compose?text=hey%20check%20the%20result%20of%20this%20game&embeds[]=${NEXT_PUBLIC_URL}/api/og?league=epl&game=${state.game}`
+        },
+        {
+          label: 'Back'
         }
       ],
       image: {
