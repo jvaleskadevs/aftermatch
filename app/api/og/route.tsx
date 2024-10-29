@@ -84,20 +84,20 @@ export async function GET(request: Request) {
         <div
           style={{
             display: 'flex',
-            fontSize: 42,
+            fontSize: stats === 'true' ? 32 : 42,
             background: 'white',
             color: '#edd3fb',
             width: '100%',
             height: '100%',
           }}
         >          
-          <img width={'100%'} height={'100%'} src={`${NEXT_PUBLIC_URL}/bg.png`} />
+          <img width={'100%'} height={'100%'} src={`${NEXT_PUBLIC_URL}/bg.png`} style={{ transform:  stats === 'true' ? 'scaleY(-1)' : '' }} />
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
             <h4>{`${game.home.name} ${game.result.home}-${game.result.away} ${game.away.name}`}</h4>
           { stats === 'true' && 
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', fontSize: 18, margin: '0 auto' }}>
               {formatStats(game.statistics).map((s: any) => (
-                <div style={{ display: 'flex', transform: 'translateY(-200%)', marginBottom: '6px' }} key={s.categoryName}>
+                <div style={{ display: 'flex', transform: 'translateY(-120%)', marginBottom: '6px' }} key={s.categoryName}>
                   {`${s.categoryName.toLowerCase()}`}
                   <span style={{ color: '#969696', marginLeft: '16px' }}>
                     {`${s.homeValue} - ${s.awayValue}`}
@@ -106,8 +106,7 @@ export async function GET(request: Request) {
               ))}
             </div>
           }
-          </div>
-          
+          </div>          
         </div>
       ),
       {
