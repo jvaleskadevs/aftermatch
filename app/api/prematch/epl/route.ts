@@ -35,7 +35,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         },
         {
           label: 'Back',
-          target: `${NEXT_PUBLIC_URL}/api/prematch/intro`
+          target: `${NEXT_PUBLIC_URL}/api/intro`
         }
       ],
       image: {
