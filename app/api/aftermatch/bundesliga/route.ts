@@ -43,9 +43,9 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         }
       ],
       image: {
-        src: `${NEXT_PUBLIC_URL}/api/aftermach/og?league=bundesliga&week=${week}&game=${state.game}&stats=${state.stats}`,
+        src: `${NEXT_PUBLIC_URL}/api/aftermatch/og?league=bundesliga&week=${week}&game=${state.game}&stats=${state.stats}`,
       },
-      postUrl: `${NEXT_PUBLIC_URL}/api/aftermach/bundesliga`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/aftermatch/bundesliga`,
       state: {
         game: state.game,
         stats: state.stats,

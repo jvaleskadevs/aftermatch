@@ -6,8 +6,8 @@ const frameMetadata = getFrameMetadata({
   buttons: [
     {
       label: 'Results',
-      target: `${NEXT_PUBLIC_URL}/api/intro`,
-      postUrl: `${NEXT_PUBLIC_URL}/api/intro`
+      target: `${NEXT_PUBLIC_URL}/api/aftermatch/intro`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/aftermatch/intro`
     },
     {
       label: 'Next Week',
