@@ -118,7 +118,10 @@ export async function GET(request: Request) {
             style: 'normal',
             weight: 400
         }],
-        emoji: 'twemoji'
+        emoji: 'twemoji',
+        headers: {
+          'cache-control': 'max-age=1'
+        }
       }      
     )
   } catch (e: any) {
