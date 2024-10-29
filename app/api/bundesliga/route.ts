@@ -48,7 +48,8 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       postUrl: `${NEXT_PUBLIC_URL}/api/bundesliga`,
       state: {
         game: state.game,
-        stats: state.stats
+        stats: state.stats,
+        time: new Date().toISOString()
       }
     })
   );
