@@ -12,30 +12,30 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       buttons: [
         {
           label: 'EPL',
-          target: `${NEXT_PUBLIC_URL}/api/aftermach/epl`,
-          postUrl: `${NEXT_PUBLIC_URL}/api/aftermach/epl`
+          target: `${NEXT_PUBLIC_URL}/api/aftermatch/epl`,
+          postUrl: `${NEXT_PUBLIC_URL}/api/aftermatch/epl`
         },
         {
           label: 'La Liga',
-          target: `${NEXT_PUBLIC_URL}/api/aftermach/laliga`,
-          postUrl: `${NEXT_PUBLIC_URL}/api/aftermach/laliga`
+          target: `${NEXT_PUBLIC_URL}/api/aftermatch/laliga`,
+          postUrl: `${NEXT_PUBLIC_URL}/api/aftermatch/laliga`
         },
         {
           label: 'Serie A',
-          target: `${NEXT_PUBLIC_URL}/api/aftermach/seriea`,
-          postUrl: `${NEXT_PUBLIC_URL}/api/aftermach/seriea`
+          target: `${NEXT_PUBLIC_URL}/api/aftermatch/seriea`,
+          postUrl: `${NEXT_PUBLIC_URL}/api/aftermatch/seriea`
         },
         {
           label: 'Bundesliga',
-          target: `${NEXT_PUBLIC_URL}/api/aftermach/bundesliga`,
-          postUrl: `${NEXT_PUBLIC_URL}/api/aftermach/bundesliga`
+          target: `${NEXT_PUBLIC_URL}/api/aftermatch/bundesliga`,
+          postUrl: `${NEXT_PUBLIC_URL}/api/aftermatch/bundesliga`
         }
       ],
       image: {
         src: `${NEXT_PUBLIC_URL}/the_aftermatch.png`,
         aspectRatio: '1.91:1',
       },
-      postUrl: `${NEXT_PUBLIC_URL}/api/aftermach/intro`
+      postUrl: `${NEXT_PUBLIC_URL}/api/aftermatch/intro`
     }),
     {
       headers: {
