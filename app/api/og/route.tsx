@@ -120,7 +120,7 @@ export async function GET(request: Request) {
         }],
         emoji: 'twemoji',
         headers: {
-          'cache-control': 'max-age=1'
+          'cache-control': 'public, max-age=0, must-revalidate'
         }
       }      
     )
