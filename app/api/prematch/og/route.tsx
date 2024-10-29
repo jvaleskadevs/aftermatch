@@ -1,9 +1,9 @@
 import { ImageResponse } from '@vercel/og'
-import eplData from '../data/eplData.json'
-import laligaData from '../data/laligaData.json'
-import bundesligaData from '../data/bundesligaData.json'
-import serieaData from '../data/serieaData.json'
-import { NEXT_PUBLIC_URL } from '../../config'
+import eplData from '../../data/england-premier-league-10.json'
+import laligaData from '../../data/spain-laliga-10.json'
+import bundesligaData from '../../data/germany-bundesliga-10.json'
+import serieaData from '../../data/italy-serie-a-10.json'
+import { NEXT_PUBLIC_URL } from '../../../config'
 
 export const runtime = "edge"
 
@@ -18,29 +18,6 @@ const getGameData = ({ leagueData, gameIdx }: GetGameData): any => {
     games.push(leagueData[gameId]);
   }
   return games[parseInt(gameIdx) || 0];
-}
-
-type GetGameStats = {
-  game: any,
-  stats: string
-}
-
-const getGameStats = ({ game, stats }: GetGameStats): any => {
-  return game?.statistics?.filter((g: any) => g?.categoryName?.toLowerCase() === stats)?.[0] || undefined;
-}
-
-const formatStats = (stats: any): any => {
-    delete stats[0];
-    delete stats[1];
-    delete stats[6];
-    if (stats[12].categoryName === "Red Cards") {
-      delete stats[16];
-      delete stats[17];
-    } else {
-      delete stats[15];
-      delete stats[16];       
-    } 
-    return stats;
 }
 
 export async function GET(request: Request) {
@@ -66,11 +43,6 @@ export async function GET(request: Request) {
       ? searchParams.get('game')?.slice(0, 100)
       : '0') || '0';      
       
-    const hasStats = searchParams.has('stats');
-    const stats = hasStats
-      ? searchParams.get('stats')?.slice(0, 100)
-      : false;
-      
     let leagueData;
     if (league === 'epl') leagueData = eplData;
     if (league === 'laliga') leagueData = laligaData;
@@ -84,28 +56,16 @@ export async function GET(request: Request) {
         <div
           style={{
             display: 'flex',
-            fontSize: stats === 'true' ? 32 : 42,
+            fontSize: 42,
             background: 'white',
             color: '#edd3fb',
             width: '100%',
             height: '100%',
           }}
         >          
-          <img width={'100%'} height={'100%'} src={`${NEXT_PUBLIC_URL}/bg.png`} style={{ transform:  stats === 'true' ? 'scaleY(-1)' : '' }} />
+          <img width={'100%'} height={'100%'} src={`${NEXT_PUBLIC_URL}/bg.png`} style={{ transform:  'scaleY(-1)' }} />
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-            <h4>{`${game.home.name} ${game.result.home}-${game.result.away} ${game.away.name}`}</h4>
-          { stats === 'true' && 
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', fontSize: 18, margin: '0 auto' }}>
-              {formatStats(game.statistics).map((s: any) => (
-                <div style={{ display: 'flex', transform: 'translateY(-120%)', marginBottom: '6px' }} key={s.categoryName}>
-                  {`${s.categoryName.toLowerCase()}`}
-                  <span style={{ color: '#969696', marginLeft: '16px' }}>
-                    {`${s.homeValue} - ${s.awayValue}`}
-                  </span>
-                </div>
-              ))}
-            </div>
-          }
+            <h4>{`${game.home.name} - ${game.away.name}`}</h4>
           </div>          
         </div>
       ),

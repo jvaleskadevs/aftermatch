@@ -1,18 +1,28 @@
 import { getFrameMetadata } from '@coinbase/onchainkit/frame';
 import type { Metadata } from 'next';
-import { NEXT_PUBLIC_URL } from './config';
+import { NEXT_PUBLIC_URL } from '../config';
 
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Results',
-      target: `${NEXT_PUBLIC_URL}/api/intro`,
-      postUrl: `${NEXT_PUBLIC_URL}/api/intro`
+      label: 'EPL',
+      target: `${NEXT_PUBLIC_URL}/api/epl`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/epl`
     },
     {
-      label: 'Next Week',
-      target: `${NEXT_PUBLIC_URL}/api/prematch/intro`,
-      postUrl: `${NEXT_PUBLIC_URL}/api/prematch/intro`
+      label: 'La Liga',
+      target: `${NEXT_PUBLIC_URL}/api/laliga`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/laliga`
+    },
+    {
+      label: 'Serie A',
+      target: `${NEXT_PUBLIC_URL}/api/seriea`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/seriea`
+    },
+    {
+      label: 'Bundesliga',
+      target: `${NEXT_PUBLIC_URL}/api/bundesliga`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/bundesliga`
     }
   ],
   image: {
