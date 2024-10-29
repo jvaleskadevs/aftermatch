@@ -36,7 +36,12 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         aspectRatio: '1.91:1',
       },
       postUrl: `${NEXT_PUBLIC_URL}/api/intro`
-    })
+    }),
+    {
+      headers: {
+        'Cache-Control': 'public, max-age=0, must-revalidate'
+      }
+    }
   );
 }
 

@@ -35,7 +35,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         {
           action: 'link',
           label: 'Share',
-          target: `https://warpcast.com/~/compose?text=hey%20check%20the%20results%20of%20these%20games&embeds[]=${NEXT_PUBLIC_URL}/`
+          target: `https://warpcast.com/~/compose?text=hey%20check%20the%20results%20of%20these%20games&embeds[]=${NEXT_PUBLIC_URL}/api/bundesliga`
         },
         {
           label: 'Back',
@@ -51,8 +51,13 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         stats: state.stats,
         time: new Date().toISOString()
       }
-    })
-  );
+    }),
+    {
+      headers: {
+        'Cache-Control': 'public, max-age=0, must-revalidate'
+      }
+    }
+  )
 }
 
 export async function POST(req: NextRequest): Promise<Response> {

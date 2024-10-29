@@ -52,8 +52,14 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         stats: state.stats,
         time: new Date().toISOString()
       }
-    })
-  );
+    }),
+    {
+      headers: {
+        'Cache-Control': 'public, max-age=0, must-revalidate'
+      }
+    }
+  )
+;
 }
 
 export async function POST(req: NextRequest): Promise<Response> {
