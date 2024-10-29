@@ -6,30 +6,30 @@ const frameMetadata = getFrameMetadata({
   buttons: [
     {
       label: 'EPL',
-      target: `${NEXT_PUBLIC_URL}/api/epl`,
-      postUrl: `${NEXT_PUBLIC_URL}/api/epl`
+      target: `${NEXT_PUBLIC_URL}/api/aftermatch/epl`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/aftermatch/epl`
     },
     {
       label: 'La Liga',
-      target: `${NEXT_PUBLIC_URL}/api/laliga`,
-      postUrl: `${NEXT_PUBLIC_URL}/api/laliga`
+      target: `${NEXT_PUBLIC_URL}/api/aftermatch/laliga`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/aftermatch/laliga`
     },
     {
       label: 'Serie A',
-      target: `${NEXT_PUBLIC_URL}/api/seriea`,
-      postUrl: `${NEXT_PUBLIC_URL}/api/seriea`
+      target: `${NEXT_PUBLIC_URL}/api/aftermatch/seriea`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/aftermatch/seriea`
     },
     {
       label: 'Bundesliga',
-      target: `${NEXT_PUBLIC_URL}/api/bundesliga`,
-      postUrl: `${NEXT_PUBLIC_URL}/api/bundesliga`
+      target: `${NEXT_PUBLIC_URL}/api/aftermatch/bundesliga`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/aftermatch/bundesliga`
     }
   ],
   image: {
     src: `${NEXT_PUBLIC_URL}/the_aftermatch.png`,
     aspectRatio: '1.91:1',
   },
-  postUrl: `${NEXT_PUBLIC_URL}/api/intro`
+  postUrl: `${NEXT_PUBLIC_URL}/api/aftermatch/intro`
 });
 
 export const metadata: Metadata = {

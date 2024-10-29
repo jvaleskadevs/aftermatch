@@ -1,6 +1,6 @@
 import { FrameRequest, getFrameMessage, getFrameHtmlResponse } from '@coinbase/onchainkit/frame';
 import { NextRequest, NextResponse } from 'next/server';
-import { NEXT_PUBLIC_URL } from '../../config';
+import { NEXT_PUBLIC_URL } from '../../../config';
 
 async function getResponse(req: NextRequest): Promise<NextResponse> {
   const body: FrameRequest = await req.json();
@@ -35,17 +35,17 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         {
           action: 'link',
           label: 'Share',
-          target: `https://warpcast.com/~/compose?text=hey%20check%20the%20results%20of%20these%20games&embeds[]=${NEXT_PUBLIC_URL}/`
+          target: `https://warpcast.com/~/compose?text=hey%20check%20the%20results%20of%20these%20games&embeds[]=${NEXT_PUBLIC_URL}/api/bundesliga`
         },
         {
           label: 'Back',
-          target: `${NEXT_PUBLIC_URL}/api/intro`,
+          target: `${NEXT_PUBLIC_URL}/api/aftermach/intro`,
         }
       ],
       image: {
-        src: `${NEXT_PUBLIC_URL}/api/og?league=seriea&week=${week}&game=${state.game}&stats=${state.stats}`,
+        src: `${NEXT_PUBLIC_URL}/api/aftermach/og?league=bundesliga&week=${week}&game=${state.game}&stats=${state.stats}`,
       },
-      postUrl: `${NEXT_PUBLIC_URL}/api/seriea`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/aftermach/bundesliga`,
       state: {
         game: state.game,
         stats: state.stats,
@@ -57,7 +57,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         'Cache-Control': 'public, max-age=0, must-revalidate'
       }
     }
-  );
+  )
 }
 
 export async function POST(req: NextRequest): Promise<Response> {

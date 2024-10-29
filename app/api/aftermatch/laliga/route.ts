@@ -1,15 +1,14 @@
 import { FrameRequest, getFrameMessage, getFrameHtmlResponse } from '@coinbase/onchainkit/frame';
 import { NextRequest, NextResponse } from 'next/server';
-import { NEXT_PUBLIC_URL } from '../../config';
+import { NEXT_PUBLIC_URL } from '../../../config';
 
 async function getResponse(req: NextRequest): Promise<NextResponse> {
   const body: FrameRequest = await req.json();
   const { isValid, message } = await getFrameMessage(body, { neynarApiKey: process.env.NEYNAR_API_KEY || 'NEYNAR_ONCHAIN_KIT' });
   if (!isValid) return new NextResponse('Message not valid', { status: 500 });
-  
+
   const week = 9;
 
-  //const text = message.input || '';
   let state = {
     game: 0,
     stats: false
@@ -40,13 +39,13 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         },
         {
           label: 'Back',
-          target: `${NEXT_PUBLIC_URL}/api/intro`
+          target: `${NEXT_PUBLIC_URL}/api/aftermach/intro`,
         }
       ],
       image: {
-        src: `${NEXT_PUBLIC_URL}/api/og?league=epl&week=${week}&game=${state.game}&stats=${state.stats}`,
+        src: `${NEXT_PUBLIC_URL}/api/aftermach/og?league=laliga&week=${week}&game=${state.game}&stats=${state.stats}`,
       },
-      postUrl: `${NEXT_PUBLIC_URL}/api/epl`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/aftermach/laliga`,
       state: {
         game: state.game,
         stats: state.stats,
@@ -58,8 +57,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         'Cache-Control': 'public, max-age=0, must-revalidate'
       }
     }
-  )
-;
+  );
 }
 
 export async function POST(req: NextRequest): Promise<Response> {

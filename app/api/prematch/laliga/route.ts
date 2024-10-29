@@ -28,9 +28,6 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
           label: 'Next'
         },
         {
-          label: 'Game'
-        },
-        {
           action: 'link',
           label: 'Share',
           target: `https://warpcast.com/~/compose?text=hey%20check%20the%20results%20of%20these%20games&embeds[]=${NEXT_PUBLIC_URL}/`

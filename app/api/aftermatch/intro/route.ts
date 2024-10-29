@@ -6,54 +6,43 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   const body: FrameRequest = await req.json();
   const { isValid, message } = await getFrameMessage(body, { neynarApiKey: process.env.NEYNAR_API_KEY || 'NEYNAR_ONCHAIN_KIT' });
   if (!isValid) return new NextResponse('Message not valid', { status: 500 });
-  
-  const week = 9;
-
-  //const text = message.input || '';
-  let state = {
-    game: 0
-  };
-  try {
-    state = JSON.parse(decodeURIComponent(message.state?.serialized));
-    if (message.button === 1) state.game < 10 ? state.game++ : 0;
-  } catch (e) {
-    console.error(e);
-  }
-  
-  console.log(state);
 
   return new NextResponse(
     getFrameHtmlResponse({
       buttons: [
         {
-          label: 'Next'
+          label: 'EPL',
+          target: `${NEXT_PUBLIC_URL}/api/aftermach/epl`,
+          postUrl: `${NEXT_PUBLIC_URL}/api/aftermach/epl`
         },
         {
-          action: 'link',
-          label: 'Share',
-          target: `https://warpcast.com/~/compose?text=hey%20check%20the%20results%20of%20these%20games&embeds[]=${NEXT_PUBLIC_URL}/`
+          label: 'La Liga',
+          target: `${NEXT_PUBLIC_URL}/api/aftermach/laliga`,
+          postUrl: `${NEXT_PUBLIC_URL}/api/aftermach/laliga`
         },
         {
-          label: 'Back',
-          target: `${NEXT_PUBLIC_URL}/api/prematch/intro`
+          label: 'Serie A',
+          target: `${NEXT_PUBLIC_URL}/api/aftermach/seriea`,
+          postUrl: `${NEXT_PUBLIC_URL}/api/aftermach/seriea`
+        },
+        {
+          label: 'Bundesliga',
+          target: `${NEXT_PUBLIC_URL}/api/aftermach/bundesliga`,
+          postUrl: `${NEXT_PUBLIC_URL}/api/aftermach/bundesliga`
         }
       ],
       image: {
-        src: `${NEXT_PUBLIC_URL}/api/prematch/og?league=epl&week=${week}&game=${state.game}`,
+        src: `${NEXT_PUBLIC_URL}/the_aftermatch.png`,
+        aspectRatio: '1.91:1',
       },
-      postUrl: `${NEXT_PUBLIC_URL}/api/prematch/epl`,
-      state: {
-        game: state.game,
-        time: new Date().toISOString()
-      }
+      postUrl: `${NEXT_PUBLIC_URL}/api/aftermach/intro`
     }),
     {
       headers: {
         'Cache-Control': 'public, max-age=0, must-revalidate'
       }
     }
-  )
-;
+  );
 }
 
 export async function POST(req: NextRequest): Promise<Response> {
