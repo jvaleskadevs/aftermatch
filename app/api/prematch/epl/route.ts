@@ -11,11 +11,13 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
   //const text = message.input || '';
   let state = {
-    game: 0
+    game: 0,
+    mvp: false
   };
   try {
     state = JSON.parse(decodeURIComponent(message.state?.serialized));
     if (message.button === 1) state.game < 10 ? state.game++ : 0;
+    if (message.button === 2) state.mvp = !state.mvp;
   } catch (e) {
     console.error(e);
   }
@@ -29,6 +31,9 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
           label: 'Next'
         },
         {
+          label: state.mvp ? 'Ask MVP' : 'Game'
+        },
+        {
           action: 'link',
           label: 'Share',
           target: `https://warpcast.com/~/compose?text=hey%20check%20the%20results%20of%20these%20games&embeds[]=${NEXT_PUBLIC_URL}/`
@@ -39,11 +44,12 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         }
       ],
       image: {
-        src: `${NEXT_PUBLIC_URL}/api/prematch/og?league=epl&week=${week}&game=${state.game}`,
+        src: `${NEXT_PUBLIC_URL}/api/prematch/og?league=epl&week=${week}&game=${state.game}&mvp${state.mvp}`,
       },
       postUrl: `${NEXT_PUBLIC_URL}/api/prematch/epl`,
       state: {
         game: state.game,
+        mvp: state.mvp,
         time: new Date().toISOString()
       }
     }),

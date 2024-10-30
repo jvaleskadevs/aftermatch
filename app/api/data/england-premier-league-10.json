@@ -12,7 +12,16 @@
     "result": {
       "status": " "
     },
-    "statistics": []
+    "mvp": [
+      {
+        "id": 0,
+        "tip": "- Tight match, Arsenal slightly favored\n- Both teams inconsistent\n- Prediction: Draw or Arsenal (55% confidence)\n- Prices too close to probability - NO VALUE"
+      },
+      {
+        "id": 1,
+        "tip": "- Draw/Arsenal | 55% | \n Close match, both teams inconsistent"
+      }
+    ]
   },
   "MqhPmaA4": {
     "date": "02.11.2024 16:00",
@@ -27,7 +36,16 @@
     "result": {
       "status": " "
     },
-    "statistics": []
+    "mvp": [
+      {
+        "id": 0,
+        "tip": "- Man City (1st) vs Bournemouth (11th)\n - Citys form: WDDWW\n Man City is dominating the league\n - Bournemouth struggling\n - Prediction: Man City Win (80% confidence)\n Less than 80% - VALUE BET ✅"
+      },
+      {
+        "id": 1,
+        "tip": "- Man City Win | 85% | \n Man City (1st) in great form, \n Bournemouth (11th) struggling \n Man City is league leader, unbeaten, \n playing against struggling Bournemouth"
+      }
+    ]
   },
   "lb85TUOk": {
     "date": "02.11.2024 16:00",
@@ -42,7 +60,7 @@
     "result": {
       "status": " "
     },
-    "statistics": []
+    "mvp": []
   },
   "rc1ER8g2": {
     "date": "02.11.2024 16:00",
@@ -57,7 +75,16 @@
     "result": {
       "status": " "
     },
-    "statistics": []
+    "mvp": [
+      {
+        "id": 0,
+        "tip": "- Liverpool (2nd) vs Brighton (6th)\n - Liverpools form: WWWWL\n - Home advantage\n - Liverpool strong at home\n - Brighton inconsistent away.\n- Prediction: Liverpool Win (75% confidence)\n - Less than 75% - VALUE BET ✅"
+      },
+      {
+        "id": 1,
+        "tip": "Liverpool Win | 75% | \n Liverpool strong at home, good form"
+      }
+    ]
   },
   "21YvrUwq": {
     "date": "02.11.2024 16:00",
@@ -72,7 +99,12 @@
     "result": {
       "status": " "
     },
-    "statistics": []
+    "mvp": [
+      {
+        "id": 0,
+        "tip": "Nottingham Forest | 60% | \n Forest showing good form at home"
+      }
+    ]
   },
   "OGMmt88e": {
     "date": "02.11.2024 16:00",
@@ -87,7 +119,12 @@
     "result": {
       "status": " "
     },
-    "statistics": []
+    "mvp": [
+      {
+        "id": 0,
+        "tip": "- Everton | 55% | \n Southampton in terrible form (20th)"
+      }
+    ]
   },
   "EJ4unbdE": {
     "date": "02.11.2024 18:30",
@@ -102,7 +139,12 @@
     "result": {
       "status": " "
     },
-    "statistics": []
+    "mvp": [
+      {
+        "id": 0,
+        "tip": "Draw | 70% | \n Both teams struggling, likely cautious game"
+      }
+    ]
   },
   "drzevnw8": {
     "date": "03.11.2024 15:00",
@@ -117,7 +159,16 @@
     "result": {
       "status": " "
     },
-    "statistics": []
+    "mvp": [
+      {
+        "id": 0,
+        "tip": "- Very even match\n - Both teams in good form\n - Prediction: Draw likely (45% confidence)\n - Prices reflect true probability - NO VALUE"
+      },
+      {
+        "id": 1,
+        "tip": "Draw | 65% | \n Well-matched teams in good form"
+      }
+    ]
   },
   "zil0kCo9": {
     "date": "03.11.2024 17:30",
@@ -132,7 +183,12 @@
     "result": {
       "status": " "
     },
-    "statistics": []
+    "mvp": [
+      {
+        "id": 0,
+        "tip": "Chelsea Win | 60% | \n Chelsea showing better recent form"
+      }
+    ]
   },
   "ratYowuH": {
     "date": "04.11.2024 21:00",
@@ -147,21 +203,11 @@
     "result": {
       "status": " "
     },
-    "statistics": []
-  },
-  "nX2mpxRQ": {
-    "date": "09.11.2024 16:00",
-    "home": {
-      "name": "Brentford",
-      "image": "https://static.flashscore.com/res/image/data/bBj3NWfM-r9Mudk7j.png"
-    },
-    "away": {
-      "name": "Bournemouth",
-      "image": "https://static.flashscore.com/res/image/data/2Pb55xWg-tCGtX12c.png"
-    },
-    "result": {
-      "status": " "
-    },
-    "statistics": []
+    "mvp": [
+      {
+        "id": 0,
+        "tip": "Fulham | 55% | \n Home advantage crucial"
+      }
+    ]
   }
 }

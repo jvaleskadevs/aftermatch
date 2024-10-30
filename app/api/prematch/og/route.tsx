@@ -41,7 +41,12 @@ export async function GET(request: Request) {
     const hasGame = searchParams.has('game');
     const gameIdx = (hasGame
       ? searchParams.get('game')?.slice(0, 100)
-      : '0') || '0';      
+      : '0') || '0';   
+      
+    const hasMVP = searchParams.has('mvp');
+    const mvp = hasMVP
+      ? searchParams.get('mvp')?.slice(0, 100)
+      : false;   
       
     let leagueData;
     if (league === 'epl') leagueData = eplData;
@@ -56,7 +61,8 @@ export async function GET(request: Request) {
         <div
           style={{
             display: 'flex',
-            fontSize: 42,
+            flexDirection: 'column',
+            fontSize: mvp === 'true' ? 32 : 42,
             background: 'white',
             color: '#edd3fb',
             width: '100%',
@@ -64,8 +70,17 @@ export async function GET(request: Request) {
           }}
         >          
           <img width={'100%'} height={'100%'} src={`${NEXT_PUBLIC_URL}/bg.png`} style={{ transform:  'scaleY(-1)' }} />
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
             <h4>{`${game.home.name} - ${game.away.name}`}</h4>
+            { mvp === 'true' && 
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', fontSize: 18, margin: '32px auto', maxWidth: '70%' }}>
+                {game.mvp.map((s: any) => (
+                  <div style={{ display: 'flex', marginBottom: '6px' }} key={s.id}>
+                    {s.tip}
+                  </div>
+                ))}
+              </div>
+            }
           </div>          
         </div>
       ),
