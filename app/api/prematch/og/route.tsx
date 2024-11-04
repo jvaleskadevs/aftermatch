@@ -1,8 +1,8 @@
 import { ImageResponse } from '@vercel/og'
-import eplData from '../../data/england-premier-league-10.json'
-import laligaData from '../../data/spain-laliga-10.json'
-import bundesligaData from '../../data/germany-bundesliga-10.json'
-import serieaData from '../../data/italy-serie-a-10.json'
+import eplData from '../../data/england-premier-league-11.json'
+import laligaData from '../../data/spain-laliga-11.json'
+import bundesligaData from '../../data/germany-bundesliga-11.json'
+import serieaData from '../../data/italy-serie-a-11.json'
 import { NEXT_PUBLIC_URL } from '../../../config'
 
 export const runtime = "edge"
@@ -73,12 +73,13 @@ export async function GET(request: Request) {
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
             <h4>{`${game.home.name} - ${game.away.name}`}</h4>
             { mvp === 'true' && 
-              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', fontSize: 18, margin: '32px auto', maxWidth: '70%' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', fontSize: 18, margin: '16px auto', maxWidth: '70%' }}>
                 {game.mvp.map((s: any) => (
                   <div style={{ display: 'flex', marginBottom: '6px' }} key={s.id}>
                     {s.tip}
                   </div>
                 ))}
+                <div style={{ display: 'flex', margin: '16px auto', fontSize: '12px' }}>AI pregenerated content, NFA</div>
               </div>
             }
           </div>          
@@ -95,7 +96,7 @@ export async function GET(request: Request) {
         }],
         emoji: 'twemoji',
         headers: {
-          'Cache-Control': 'public, max-age=0, must-revalidate'
+          'cache-control': 'public, max-age=0, must-revalidate'
         }
       }      
     )

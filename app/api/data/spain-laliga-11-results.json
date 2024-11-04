@@ -1,0 +1,826 @@
+{
+  "zeCiJHet": {
+    "date": "04.11.2024 21:00",
+    "home": {
+      "name": "Celta Vigo",
+      "image": "https://static.flashscore.com/res/image/data/O2htOWDa-SOY3p1Si.png"
+    },
+    "away": {
+      "name": "Getafe",
+      "image": "https://static.flashscore.com/res/image/data/OjieMlGG-YmCZKGcR.png"
+    },
+    "result": {
+      "home": "1",
+      "away": "0",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "1.92",
+        "awayValue": "0.54"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "57%",
+        "awayValue": "43%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "10",
+        "awayValue": "10"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "3",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "7",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "0",
+        "awayValue": "5"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "11",
+        "awayValue": "12"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "0",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "4",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "16",
+        "awayValue": "16"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "2",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "12",
+        "awayValue": "11"
+      },
+      {
+        "categoryName": "Red Cards",
+        "homeValue": "0",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "1",
+        "awayValue": "4"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "573",
+        "awayValue": "413"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "476",
+        "awayValue": "320"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "1",
+        "awayValue": "6"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "7",
+        "awayValue": "9"
+      }
+    ]
+  },
+  "U5mYDMJ0": {
+    "date": "03.11.2024 21:00",
+    "home": {
+      "name": "Ath Bilbao",
+      "image": "https://static.flashscore.com/res/image/data/Y7CgBGYg-vJb36ZBF.png"
+    },
+    "away": {
+      "name": "Betis",
+      "image": "https://static.flashscore.com/res/image/data/hvyaw5HG-zkU5wiAr.png"
+    },
+    "result": {
+      "home": "1",
+      "away": "1",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "4.04",
+        "awayValue": "0.84"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "49%",
+        "awayValue": "51%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "17",
+        "awayValue": "7"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "8",
+        "awayValue": "4"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "7",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "2",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "8",
+        "awayValue": "9"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "6",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "3",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "26",
+        "awayValue": "21"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "3",
+        "awayValue": "7"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "9",
+        "awayValue": "8"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "475",
+        "awayValue": "498"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "403",
+        "awayValue": "412"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "5",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "13",
+        "awayValue": "10"
+      }
+    ]
+  },
+  "rsizUY9b": {
+    "date": "03.11.2024 18:30",
+    "home": {
+      "name": "Sevilla",
+      "image": "https://static.flashscore.com/res/image/data/G2BgO5Ar-YmCZKGcR.png"
+    },
+    "away": {
+      "name": "Real Sociedad",
+      "image": "https://static.flashscore.com/res/image/data/QJraUAcM-vJb36ZBF.png"
+    },
+    "result": {
+      "home": "0",
+      "away": "2",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "1.09",
+        "awayValue": "1.37"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "54%",
+        "awayValue": "46%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "8",
+        "awayValue": "9"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "0",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "5",
+        "awayValue": "4"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "3",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "17",
+        "awayValue": "6"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "5",
+        "awayValue": "9"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "1",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "22",
+        "awayValue": "16"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "1",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "6",
+        "awayValue": "17"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "2",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "497",
+        "awayValue": "413"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "393",
+        "awayValue": "329"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "3",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "11",
+        "awayValue": "7"
+      }
+    ]
+  },
+  "UaS8aGMt": {
+    "date": "03.11.2024 16:15",
+    "home": {
+      "name": "Barcelona",
+      "image": "https://static.flashscore.com/res/image/data/8dhw5vxS-fcDVLdrL.png"
+    },
+    "away": {
+      "name": "Espanyol",
+      "image": "https://static.flashscore.com/res/image/data/SObn7xDr-8GL0cHSF.png"
+    },
+    "result": {
+      "home": "3",
+      "away": "1",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "1.46",
+        "awayValue": "0.97"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "77%",
+        "awayValue": "23%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "14",
+        "awayValue": "10"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "9",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "3",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "2",
+        "awayValue": "4"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "14",
+        "awayValue": "13"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "9",
+        "awayValue": "5"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "3",
+        "awayValue": "6"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "15",
+        "awayValue": "14"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "2",
+        "awayValue": "6"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "13",
+        "awayValue": "14"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "0",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "761",
+        "awayValue": "208"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "696",
+        "awayValue": "140"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "3",
+        "awayValue": "5"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "5",
+        "awayValue": "13"
+      }
+    ]
+  },
+  "QXtsC0lD": {
+    "date": "03.11.2024 14:00",
+    "home": {
+      "name": "Atl. Madrid",
+      "image": "https://static.flashscore.com/res/image/data/CjfjIsYg-nLBjwR1F.png"
+    },
+    "away": {
+      "name": "Las Palmas",
+      "image": "https://static.flashscore.com/res/image/data/44xPoqHG-d6gaf9ua.png"
+    },
+    "result": {
+      "home": "2",
+      "away": "0",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "1.63",
+        "awayValue": "0.02"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "57%",
+        "awayValue": "43%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "15",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "3",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "8",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "4",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "13",
+        "awayValue": "13"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "9",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "1",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "26",
+        "awayValue": "20"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "1",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "13",
+        "awayValue": "13"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "1",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "540",
+        "awayValue": "407"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "455",
+        "awayValue": "312"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "4",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "7",
+        "awayValue": "14"
+      }
+    ]
+  },
+  "dA00HeQh": {
+    "date": "02.11.2024 16:15",
+    "home": {
+      "name": "Girona",
+      "image": "https://static.flashscore.com/res/image/data/xGkOqFDa-vPm0hQMN.png"
+    },
+    "away": {
+      "name": "Leganes",
+      "image": "https://static.flashscore.com/res/image/data/IqhNyYjl-Q3zX1dyT.png"
+    },
+    "result": {
+      "home": "4",
+      "away": "3",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "1.79",
+        "awayValue": "0.39"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "55%",
+        "awayValue": "45%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "15",
+        "awayValue": "8"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "6",
+        "awayValue": "5"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "4",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "5",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "15",
+        "awayValue": "17"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "6",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "1",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "15",
+        "awayValue": "18"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "2",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "17",
+        "awayValue": "15"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "2",
+        "awayValue": "4"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "487",
+        "awayValue": "410"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "419",
+        "awayValue": "329"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "5",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "5",
+        "awayValue": "5"
+      }
+    ]
+  },
+  "4z48FZf5": {
+    "date": "02.11.2024 14:00",
+    "home": {
+      "name": "Osasuna",
+      "image": "https://static.flashscore.com/res/image/data/84LOczeM-xQnxBzcF.png"
+    },
+    "away": {
+      "name": "Valladolid",
+      "image": "https://static.flashscore.com/res/image/data/pCJjU8yB-htRvrFH6.png"
+    },
+    "result": {
+      "home": "1",
+      "away": "0",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "2.41",
+        "awayValue": "0.23"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "50%",
+        "awayValue": "50%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "20",
+        "awayValue": "7"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "4",
+        "awayValue": "4"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "11",
+        "awayValue": "1"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "5",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "12",
+        "awayValue": "21"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "7",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "0",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "22",
+        "awayValue": "26"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "4",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "21",
+        "awayValue": "12"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "1",
+        "awayValue": "5"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "352",
+        "awayValue": "357"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "265",
+        "awayValue": "274"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "7",
+        "awayValue": "0"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "8",
+        "awayValue": "7"
+      }
+    ]
+  },
+  "02cHDDPH": {
+    "date": "01.11.2024 21:00",
+    "home": {
+      "name": "Alaves",
+      "image": "https://static.flashscore.com/res/image/data/hrI86AzS-4U3vjZKk.png"
+    },
+    "away": {
+      "name": "Mallorca",
+      "image": "https://static.flashscore.com/res/image/data/pSBNl3eM-rmDEjevK.png"
+    },
+    "result": {
+      "home": "1",
+      "away": "0",
+      "status": "FINISHED"
+    },
+    "statistics": [
+      {
+        "categoryName": "Expected Goals (xG)",
+        "homeValue": "1.15",
+        "awayValue": "0.51"
+      },
+      {
+        "categoryName": "Ball Possession",
+        "homeValue": "52%",
+        "awayValue": "48%"
+      },
+      {
+        "categoryName": "Goal Attempts",
+        "homeValue": "13",
+        "awayValue": "7"
+      },
+      {
+        "categoryName": "Shots on Goal",
+        "homeValue": "3",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Shots off Goal",
+        "homeValue": "4",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Blocked Shots",
+        "homeValue": "6",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Free Kicks",
+        "homeValue": "12",
+        "awayValue": "19"
+      },
+      {
+        "categoryName": "Corner Kicks",
+        "homeValue": "7",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Offsides",
+        "homeValue": "0",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Throw-ins",
+        "homeValue": "23",
+        "awayValue": "28"
+      },
+      {
+        "categoryName": "Goalkeeper Saves",
+        "homeValue": "2",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Fouls",
+        "homeValue": "19",
+        "awayValue": "12"
+      },
+      {
+        "categoryName": "Yellow Cards",
+        "homeValue": "3",
+        "awayValue": "2"
+      },
+      {
+        "categoryName": "Total Passes",
+        "homeValue": "323",
+        "awayValue": "305"
+      },
+      {
+        "categoryName": "Completed Passes",
+        "homeValue": "227",
+        "awayValue": "225"
+      },
+      {
+        "categoryName": "Crosses Completed",
+        "homeValue": "3",
+        "awayValue": "3"
+      },
+      {
+        "categoryName": "Interceptions",
+        "homeValue": "8",
+        "awayValue": "13"
+      }
+    ]
+  }
+}

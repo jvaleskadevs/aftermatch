@@ -1,8 +1,8 @@
 import { ImageResponse } from '@vercel/og'
-import eplData from '../../data/eplData.json'
-import laligaData from '../../data/laligaData.json'
-import bundesligaData from '../../data/bundesligaData.json'
-import serieaData from '../../data/serieaData.json'
+import eplData from '../../data/england-premier-league-11-results.json'
+import laligaData from '../../data/spain-laliga-11-results.json'
+import bundesligaData from '../../data/germany-bundesliga-11-results.json'
+import serieaData from '../../data/italy-serie-a-11-results.json'
 import { NEXT_PUBLIC_URL } from '../../../config'
 
 export const runtime = "edge"

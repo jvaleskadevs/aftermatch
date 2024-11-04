@@ -55,7 +55,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     }),
     {
       headers: {
-        'Cache-Control': 'public, max-age=0, must-revalidate'
+        'cache-control': 'public, max-age=0, must-revalidate'
       }
     }
   )
