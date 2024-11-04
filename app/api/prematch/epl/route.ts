@@ -31,7 +31,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
           label: 'Next'
         },
         {
-          label: state.mvp ? 'Game' : 'Ask MVP'
+          label: 'Game'//state.mvp ? 'Game' : 'Ask MVP'
         },
         {
           action: 'link',
