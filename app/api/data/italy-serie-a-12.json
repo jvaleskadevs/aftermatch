@@ -1,0 +1,152 @@
+{
+  "WENRFI84": {
+    "date": "23.11.2024 15:00",
+    "home": {
+      "name": "Verona",
+      "image": "https://static.flashscore.com/res/image/data/vgsKSajl-jLhuIlpK.png"
+    },
+    "away": {
+      "name": "Inter",
+      "image": "https://static.flashscore.com/res/image/data/lxz64qDa-jDrBQiMS.png"
+    },
+    "result": {
+      "status": " "
+    },
+    "statistics": []
+  },
+  "z7KrCz8T": {
+    "date": "23.11.2024 18:00",
+    "home": {
+      "name": "AC Milan",
+      "image": "https://static.flashscore.com/res/image/data/htYjIjFa-fL3dmxxd.png"
+    },
+    "away": {
+      "name": "Juventus",
+      "image": "https://static.flashscore.com/res/image/data/CbDOFGyS-EXzXDYgS.png"
+    },
+    "result": {
+      "status": " "
+    },
+    "statistics": []
+  },
+  "Qyq1UHNc": {
+    "date": "23.11.2024 20:45",
+    "home": {
+      "name": "Parma",
+      "image": "https://static.flashscore.com/res/image/data/YcrE7ae5-fydXzLY6.png"
+    },
+    "away": {
+      "name": "Atalanta",
+      "image": "https://static.flashscore.com/res/image/data/xASUZ6il-rg6usZns.png"
+    },
+    "result": {
+      "status": " "
+    },
+    "statistics": []
+  },
+  "b1PJHvvh": {
+    "date": "24.11.2024 12:30",
+    "home": {
+      "name": "Genoa",
+      "image": "https://static.flashscore.com/res/image/data/WznpqVfM-hCD6m1R3.png"
+    },
+    "away": {
+      "name": "Cagliari",
+      "image": "https://static.flashscore.com/res/image/data/IBlLf9f5-McvX4bye.png"
+    },
+    "result": {
+      "status": " "
+    },
+    "statistics": []
+  },
+  "Ewi1acON": {
+    "date": "24.11.2024 15:00",
+    "home": {
+      "name": "Como",
+      "image": "https://static.flashscore.com/res/image/data/Cf5pQNyS-hpmw8K1h.png"
+    },
+    "away": {
+      "name": "Fiorentina",
+      "image": "https://static.flashscore.com/res/image/data/nPTphRh5-6XKdgOM6.png"
+    },
+    "result": {
+      "status": " "
+    },
+    "statistics": []
+  },
+  "M3xASehA": {
+    "date": "24.11.2024 15:00",
+    "home": {
+      "name": "Torino",
+      "image": "https://static.flashscore.com/res/image/data/OQWGjGcM-0lwy4Ij1.png"
+    },
+    "away": {
+      "name": "Monza",
+      "image": "https://static.flashscore.com/res/image/data/SUTtpvDa-nedmW6cD.png"
+    },
+    "result": {
+      "status": " "
+    },
+    "statistics": []
+  },
+  "KvdF6EVj": {
+    "date": "24.11.2024 18:00",
+    "home": {
+      "name": "Napoli",
+      "image": "https://static.flashscore.com/res/image/data/lhPsgJWg-Qcs4tGVj.png"
+    },
+    "away": {
+      "name": "AS Roma",
+      "image": "https://static.flashscore.com/res/image/data/QPgsexZA-GtNb9h2q.png"
+    },
+    "result": {
+      "status": " "
+    },
+    "statistics": []
+  },
+  "StHzEdwH": {
+    "date": "24.11.2024 20:45",
+    "home": {
+      "name": "Lazio",
+      "image": "https://static.flashscore.com/res/image/data/zXqymff5-fL3dmxxd.png"
+    },
+    "away": {
+      "name": "Bologna",
+      "image": "https://static.flashscore.com/res/image/data/j3Tyh1GG-McvX4bye.png"
+    },
+    "result": {
+      "status": " "
+    },
+    "statistics": []
+  },
+  "pMsXgyno": {
+    "date": "25.11.2024 18:30",
+    "home": {
+      "name": "Empoli",
+      "image": "https://static.flashscore.com/res/image/data/xArvJNCa-KbH8aCLf.png"
+    },
+    "away": {
+      "name": "Udinese",
+      "image": "https://static.flashscore.com/res/image/data/AZBQMaYA-SYw7EcY6.png"
+    },
+    "result": {
+      "status": " "
+    },
+    "statistics": []
+  },
+  "hjasAmxq": {
+    "date": "25.11.2024 20:45",
+    "home": {
+      "name": "Venezia",
+      "image": "https://static.flashscore.com/res/image/data/WxiS2Wkl-pC7LdTYL.png"
+    },
+    "away": {
+      "name": "Lecce",
+      "image": "https://static.flashscore.com/res/image/data/AaI0V5Fa-McvX4bye.png"
+    },
+    "result": {
+      "status": " "
+    },
+    "statistics": []
+  }
+}
