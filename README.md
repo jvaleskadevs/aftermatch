@@ -5,6 +5,11 @@
   </picture>
 </p>
 
+# The afermatch
+
+The aftermatch is a farcaster frame displaying the results of the most important football leagues.
+
+
 # Test
 
 To test a **deployed** Frame, use: https://warpcast.com/~/developers/frames.
@@ -30,6 +35,8 @@ A simple tool that allows you to run and test your frames locally.
     - bundesliga/
 
 <br />
+
+*data must be manually changed, the week parameter is not enabled
 
 ## Community
 
